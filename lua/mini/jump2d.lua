@@ -1080,7 +1080,7 @@ end
 
 -- Jump state -----------------------------------------------------------------
 H.advance_jump = function(opts)
-	print("Welcome to advance jump")
+	H.echo("Welcome to advance jump")
 	local label_tbl = vim.split(opts.labels, "")
 
 	local spots = H.cache.spots
