@@ -1080,7 +1080,6 @@ end
 
 -- Jump state -----------------------------------------------------------------
 H.advance_jump = function(opts)
-	H.message("Welcome to advance jump")
 	local label_tbl = vim.split(opts.labels, "")
 
 	local spots = H.cache.spots
@@ -1092,7 +1091,7 @@ H.advance_jump = function(opts)
 		return
 	end
 
-	local key = H.getcharstr("Enter encoding symbol to advance jump")
+	local key = H.getcharstr("Enter encoding twat to advance jump")
 	print(key)
 
 	if vim.tbl_contains(label_tbl, key) then
